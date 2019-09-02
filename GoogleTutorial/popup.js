@@ -4,9 +4,6 @@ let changeColor = document.getElementById('changeColor');
     changeColor.style.backgroundColor = data.color;
     changeColor.setAttribute('value', data.color);
   });
-
-  let changeColor = document.getElementById('changeColor');
-   
   changeColor.onclick = function(element) {
     let color = element.target.value;
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
